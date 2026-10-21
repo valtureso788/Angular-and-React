@@ -1,0 +1,6 @@
+﻿
+printWidth singleQuote overrides                  
+---------- ----------- ---------                  
+       100        True {@{files=*.html; options=}}
+
+
