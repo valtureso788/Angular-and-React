@@ -1,0 +1,57 @@
+<section class="todo-container" aria-labelledby="todo-title">
+  <app-favorites-counter></app-favorites-counter>
+  <h2 id="todo-title">Мой список дел</h2>
+
+  <div class="add-row">
+    <input
+      #taskInput
+      type="text"
+      placeholder="Новая задача..."
+      aria-label="Новая задача"
+      (keyup.enter)="addTodo(taskInput)"
+    />
+    <button class="add-button" type="button" (click)="addTodo(taskInput)">
+      Добавить
+    </button>
+  </div>
+
+  <nav class="filters" aria-label="Фильтр задач">
+    <button type="button" [class.active]="filter === 'all'" (click)="filter = 'all'">Все</button>
+    <button type="button" [class.active]="filter === 'active'" (click)="filter = 'active'">Активные</button>
+    <button type="button" [class.active]="filter === 'done'" (click)="filter = 'done'">Выполненные</button>
+  </nav>
+
+  @for (todo of filteredTodos; track todo.id) {
+    <div class="todo-item">
+      <label class="todo-label">
+        <input type="checkbox" [checked]="todo.done" (change)="toggleDone(todo.id)" />
+        <span [class.done]="todo.done">{{ todo.text }}</span>
+      </label>
+      <button
+        class="favorite-button"
+        type="button"
+        [attr.aria-pressed]="favorites.isFavorite(todo.id)"
+        [attr.aria-label]="favorites.isFavorite(todo.id) ? 'Убрать из избранного: ' + todo.text : 'Добавить в избранное: ' + todo.text"
+        (click)="favorites.toggle(todo.id)"
+      >
+        {{ favorites.isFavorite(todo.id) ? 'В избранном' : 'В избранное' }}
+      </button>
+      <button
+        class="delete-button"
+        type="button"
+        [attr.aria-label]="'Удалить задачу: ' + todo.text"
+        (click)="removeTodo(todo.id)"
+      >
+        Удалить
+      </button>
+    </div>
+  } @empty {
+    <p class="empty-message">
+      @if (todos.length === 0) {
+        Список пуст. Добавьте первую задачу!
+      } @else {
+        В этом фильтре пока нет задач.
+      }
+    </p>
+  }
+</section>

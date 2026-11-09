@@ -1,0 +1,41 @@
+.exercise {
+  padding: 18px;
+  border: 1px solid #c6d6ef;
+  border-radius: 8px;
+  background: #f3f7ff;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.15rem;
+}
+
+.counter-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.counter-row button {
+  min-width: 56px;
+  padding: 9px;
+  border: 0;
+  border-radius: 5px;
+  background: #245c9e;
+  color: white;
+  cursor: pointer;
+}
+
+output {
+  min-width: 2ch;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.notice {
+  margin: 14px 0 0;
+  color: #8a3c17;
+  text-align: center;
+}

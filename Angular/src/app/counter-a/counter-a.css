@@ -1,0 +1,27 @@
+.shared-counter {
+  padding: 16px;
+  border: 1px solid #abd4c9;
+  border-radius: 8px;
+  background: #effaf6;
+}
+
+h3 {
+  margin: 0 0 10px;
+}
+
+output {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+button {
+  margin-right: 6px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: #18745c;
+  color: white;
+  cursor: pointer;
+}

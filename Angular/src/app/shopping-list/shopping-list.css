@@ -1,0 +1,72 @@
+.exercise {
+  padding: 18px;
+  border: 1px solid #e6c6a9;
+  border-radius: 8px;
+  background: #fff8f1;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.15rem;
+}
+
+.add-row {
+  display: flex;
+  gap: 8px;
+}
+
+.add-row input {
+  min-width: 0;
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 11px;
+  border: 0;
+  border-radius: 5px;
+  background: #9a4f18;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  margin: 12px 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid #eadfd5;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.done {
+  color: #7a746e;
+  text-decoration: line-through;
+}
+
+.empty,
+.summary {
+  color: #71655c;
+  font-size: 0.9rem;
+}
+
+.summary {
+  margin: 12px 0 0;
+}
+
+.remove-button {
+  padding: 5px 8px;
+  background: #7d3b27;
+}

@@ -1,0 +1,97 @@
+.todo-container {
+  width: min(100%, 440px);
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+
+.add-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input {
+  min-width: 0;
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.add-button {
+  padding: 8px 12px;
+}
+
+.filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.filters button {
+  padding: 6px 10px;
+  border: 1px solid #cbd5d1;
+  border-radius: 4px;
+  background: white;
+  color: #33423c;
+}
+
+.filters button.active {
+  border-color: #176b58;
+  background: #176b58;
+  color: white;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item span {
+  overflow-wrap: anywhere;
+}
+
+.todo-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.todo-label input {
+  flex: 0 0 auto;
+}
+
+.todo-item span.done {
+  color: #75817c;
+  text-decoration: line-through;
+}
+
+.favorite-button {
+  flex: 0 0 auto;
+  padding: 5px 8px;
+  border: 1px solid #d6a53b;
+  border-radius: 4px;
+  background: #fff8e6;
+  color: #6b4a00;
+}
+
+.delete-button {
+  flex: 0 0 auto;
+  padding: 5px 8px;
+  border: 0;
+  border-radius: 4px;
+  background: #b42318;
+  color: white;
+}
+
+.empty-message {
+  color: #777;
+  font-style: italic;
+}

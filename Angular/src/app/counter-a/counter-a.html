@@ -1,0 +1,9 @@
+<section class="shared-counter" aria-label="Счётчик A">
+  <h3>Компонент A</h3>
+  <output aria-live="polite">{{ counter.count() }}</output>
+  <div>
+    <button type="button" aria-label="Уменьшить в компоненте A" (click)="counter.decrement()">−</button>
+    <button type="button" aria-label="Увеличить в компоненте A" (click)="counter.increment()">+</button>
+    <button type="button" (click)="counter.reset()">Сбросить</button>
+  </div>
+</section>

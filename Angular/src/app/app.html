@@ -1,0 +1,34 @@
+<main class="learning-dashboard">
+  <header class="page-header">
+    <p class="eyebrow">Angular · Практика</p>
+    <h1>Интерактивная лаборатория</h1>
+    <p>Привязка событий, динамические списки и общие сервисы</p>
+  </header>
+
+  <section class="catalog-section" aria-labelledby="product-title">
+    <h2 id="product-title">Карточка товара</h2>
+    <app-product-card></app-product-card>
+  </section>
+
+  <section class="exercise-grid" aria-label="Задания частей 3 и 4">
+    <app-click-counter></app-click-counter>
+    <app-shopping-list></app-shopping-list>
+    <app-todo-list></app-todo-list>
+
+    <section class="exercise shared-counters" aria-labelledby="shared-counters-title">
+      <h2 id="shared-counters-title">4.1 Один сервис, два компонента</h2>
+      <div class="counter-pair">
+        <app-counter-a></app-counter-a>
+        <app-counter-b></app-counter-b>
+      </div>
+    </section>
+
+    <section class="exercise cart-exercise" aria-labelledby="cart-exercise-title">
+      <h2 id="cart-exercise-title">4.2 Сервис корзины</h2>
+      <div class="cart-pair">
+        <app-add-to-cart></app-add-to-cart>
+        <app-cart-view></app-cart-view>
+      </div>
+    </section>
+  </section>
+</main>

@@ -1,0 +1,14 @@
+<section class="cart-form" aria-labelledby="add-to-cart-title">
+  <h3 id="add-to-cart-title">Добавить товар</h3>
+  <form (submit)="$event.preventDefault(); addItem(nameInput, priceInput)">
+    <label>
+      Название
+      <input #nameInput type="text" required placeholder="Например, Чай" />
+    </label>
+    <label>
+      Цена, ₽
+      <input #priceInput type="number" required min="0" step="0.01" placeholder="250" />
+    </label>
+    <button type="submit">Добавить в корзину</button>
+  </form>
+</section>

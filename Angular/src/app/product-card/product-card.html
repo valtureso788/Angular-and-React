@@ -1,0 +1,8 @@
+<article class="card">
+	<h2>{{ product.name }}</h2>
+	<p class="price">Цена: {{ product.price }} ₽</p>
+	@if (product.description) {
+		<p class="description">{{ product.description }}</p>
+	}
+	<small>{{ getProductInfo() }}</small>
+</article>

@@ -1,0 +1,13 @@
+<section class="exercise" aria-labelledby="click-counter-title">
+  <h2 id="click-counter-title">3.1 Счётчик кликов</h2>
+  <div class="counter-row">
+    <button type="button" aria-label="Уменьшить счётчик" (click)="decrement()">−1</button>
+    <output aria-live="polite">{{ count }}</output>
+    <button type="button" aria-label="Увеличить счётчик" (click)="increment()">+1</button>
+  </div>
+  @if (count > 5) {
+    <p class="notice">Вы кликнули много раз!</p>
+  } @else if (count < 0) {
+    <p class="notice">Счётчик ушёл в минус</p>
+  }
+</section>
