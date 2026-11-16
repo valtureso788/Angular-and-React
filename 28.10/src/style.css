@@ -1,0 +1,22 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #172033; background: #f3f5f9; font-synthesis: none; }
+:root[data-theme="dark"] { color: #e6eaf2; background: #111827; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.shell { max-width: 960px; margin: auto; padding: 24px; }
+header { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; border-bottom: 1px solid #94a3b8; padding-bottom: 16px; }
+nav { display: flex; gap: 12px; flex: 1; flex-wrap: wrap; }
+a { color: #2563eb; }
+nav a { text-decoration: none; color: inherit; }
+nav a.active { font-weight: 700; }
+main { padding-top: 20px; }
+.card { background: color-mix(in srgb, Canvas 92%, #64748b); border: 1px solid #cbd5e1; border-radius: 12px; padding: 18px; margin: 16px 0; }
+.counter { font-size: 2rem; font-weight: 700; }
+textarea { display: block; min-height: 120px; width: 100%; margin: 10px 0; }
+input, select, button { padding: 8px 10px; }
+button { cursor: pointer; }
+.row { display: flex; gap: 8px; }
+.row input { flex: 1; }
+.todo-list { padding: 0; list-style: none; }
+.todo-list li { display: flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid #cbd5e1; }
+.danger { color: #b91c1c; }
+@media (max-width: 600px) { .shell { padding: 14px; } .todo-list li { align-items: flex-start; } }
